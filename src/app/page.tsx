@@ -1,6 +1,16 @@
 'use client';
 
 import React, { useState, useEffect, useRef, useCallback } from 'react';
+import dynamic from 'next/dynamic';
+
+const CoverageMap = dynamic(() => import('./components/CoverageMap'), {
+  ssr: false,
+  loading: () => (
+    <div style={{ height: '420px', background: '#f8fafc', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#64748b', fontWeight: 700 }}>
+      جاري تحميل خريطة المنطقة الشرقية...
+    </div>
+  ),
+});
 
 // Animated Counter Hook
 function useCounter(target: number, duration: number = 2000, start: boolean = false) {
@@ -100,28 +110,32 @@ const coverageCities = [
     name: 'الدمام',
     districts: ['حي الشاطئ', 'الفيصلية', 'الفاخرية', 'النزهة', 'المزروعية', 'طيبة', 'الشعلة'],
     badge: 'تغطية فورية',
-    coords: { top: '38%', left: '56%' }
+    lat: 26.4207,
+    lng: 50.0888
   },
   {
     id: 'khobar',
     name: 'الخبر',
     districts: ['الحزام الذهبي', 'الحزام الأخضر', 'الراكة الجنوبية', 'الكورنيش', 'العليا', 'اليرموك'],
     badge: 'تغطية فورية',
-    coords: { top: '65%', left: '70%' }
+    lat: 26.2172,
+    lng: 50.1971
   },
   {
     id: 'dhahran',
     name: 'الظهران',
     districts: ['حي الدوحة', 'حي الدانة', 'حي القصور', 'حي الجامعة', 'أرامكو'],
     badge: 'تغطية فورية',
-    coords: { top: '56%', left: '42%' }
+    lat: 26.2750,
+    lng: 50.1481
   },
   {
     id: 'saihat-qatif',
     name: 'سيهات والقطيف',
     districts: ['الكوثر', 'الغدير', 'الزهراء', 'المجيدية', 'الناصرة', 'الشاطئ'],
     badge: 'تغطية يومية',
-    coords: { top: '22%', left: '38%' }
+    lat: 26.4842,
+    lng: 50.0406
   }
 ];
 
@@ -836,30 +850,15 @@ export default function Home() {
                 </h3>
                 <span className="map-live-badge">
                   <span className="map-live-dot"></span>
-                  <span>فرق جاهزة للتحرك</span>
+                  <span>فرق عمل جاهزة للتحرك</span>
                 </span>
               </div>
 
-              <div className="map-canvas-visual">
-                <div className="map-canvas-overlay"></div>
-                <div className="map-grid-lines"></div>
-
-                {/* Animated Map Pins */}
-                {coverageCities.map((city) => (
-                  <div
-                    key={city.id}
-                    className={`map-pin-marker ${selectedCityId === city.id ? 'active' : ''}`}
-                    style={{ top: city.coords.top, left: city.coords.left }}
-                    onClick={() => setSelectedCityId(city.id)}
-                  >
-                    <div className="pin-radar-ring"></div>
-                    <div className="pin-bubble-content">
-                      <span className="pin-icon-dot"></span>
-                      <span>{city.name}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <CoverageMap
+                cities={coverageCities}
+                selectedCityId={selectedCityId}
+                onSelectCity={(id) => setSelectedCityId(id)}
+              />
             </div>
 
             {/* Cities Tiles List */}
