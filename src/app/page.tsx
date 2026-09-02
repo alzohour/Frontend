@@ -1064,23 +1064,27 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Local SEO Cities Strip */}
-          <div className="footer-cities-seo">
-            <div className="footer-cities-title">مناطق الخدمة المباشرة في المنطقة الشرقية:</div>
-            <div className="footer-cities-tags">
-              <span className="footer-city-tag">الدمام</span>
-              <span className="footer-city-separator">·</span>
-              <span className="footer-city-tag">الخبر</span>
-              <span className="footer-city-separator">·</span>
-              <span className="footer-city-tag">الظهران</span>
-              <span className="footer-city-separator">·</span>
-              <span className="footer-city-tag">القطيف</span>
-              <span className="footer-city-separator">·</span>
-              <span className="footer-city-tag">سيهات</span>
-              <span className="footer-city-separator">·</span>
-              <span className="footer-city-tag">الجبيل</span>
-              <span className="footer-city-separator">·</span>
-              <span className="footer-city-tag">الأحساء</span>
+          {/* Comprehensive Local SEO & Trending Search Keywords Directory */}
+          <div className="footer-seo-directory">
+            <div className="footer-seo-group">
+              <h3 className="footer-seo-header">الكلمات الأكثر بحثاً لخدمات التنظيف بالدمام:</h3>
+              <p className="footer-seo-keywords">
+                <span>شركة تنظيف بالدمام</span> · <span>شركة تنظيف منازل بالدمام</span> · <span>غسيل كنب بالبخار بالدمام</span> · <span>تنظيف شقق بعد التشطيب الدمام</span> · <span>شركة تنظيف فلل بالدمام</span> · <span>جلي وتلميع رخام بالدمام</span> · <span>تنظيف مجالس وسجاد بالدمام</span> · <span>ارخص شركة تنظيف بالدمام</span> · <span>تنظيف مطابخ وإزالة الدهون بالدمام</span>
+              </p>
+            </div>
+
+            <div className="footer-seo-group">
+              <h3 className="footer-seo-header">خدمات التنظيف الأكثر طلباً بالخبر والظهران:</h3>
+              <p className="footer-seo-keywords">
+                <span>شركة تنظيف بالخبر</span> · <span>شركة تنظيف منازل بالخبر</span> · <span>تنظيف فلل وقصور بالخبر</span> · <span>غسيل كنب بالبخار بالخبر</span> · <span>شركة تنظيف بالظهران</span> · <span>جلي وتلميع الرخام بالخبر</span> · <span>تنظيف شقق بعد الدهان والترميم</span> · <span>تنظيف موكيت ومفروشات بالظهران</span>
+              </p>
+            </div>
+
+            <div className="footer-seo-group">
+              <h3 className="footer-seo-header">تغطية سيهات والقطيف والجبيل والأحساء:</h3>
+              <p className="footer-seo-keywords">
+                <span>شركة تنظيف بسيهات</span> · <span>شركة تنظيف بالقطيف</span> · <span>تنظيف فلل ومنازل بالقطيف</span> · <span>غسيل كنب ومجالس بسيهات</span> · <span>شركة تنظيف بالجبيل</span> · <span>شركة تنظيف بالأحساء</span> · <span>تنظيف عمائر ومباني بالشرقية</span> · <span>شركة الزهور للتنظيف</span>
+              </p>
             </div>
           </div>
 
