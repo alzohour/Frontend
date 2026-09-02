@@ -45,50 +45,50 @@ function useCounter(target: number, duration: number = 2000, start: boolean = fa
 const servicesData = [
   {
     id: 'apartments',
-    title: 'تنظيف الشقق السكنية',
-    desc: 'تنظيف شامل للغرف، المجالس، المطابخ، والواجهات الزجاجية بأعلى معايير الدقة.',
-    badge: 'الأكثر طلباً',
-    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop',
-    whatsappText: 'السلام عليكم، أود الاستفسار عن حجز خدمة تنظيف الشقق السكنية'
+    title: 'تنظيف الشقق السكنية بالدمام والخبر',
+    desc: 'تنظيف عميق وشامل للغرف والمجالس والمطابخ والواجهات الزجاجية بأعلى معايير الدقة والتعقيم.',
+    badge: 'الأكثر طلباً بالشرقية',
+    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=75&w=600&auto=format&fit=crop',
+    whatsappText: 'السلام عليكم، أود الاستفسار عن حجز خدمة تنظيف الشقق السكنية بالدمام'
   },
   {
     id: 'villas',
-    title: 'تنظيف الفلل والقصور',
-    desc: 'طواقم متخصصة لتغطية المساحات الكبيرة، الأدوار المتعددة، الملاحق، والحدائق الخارجية.',
-    badge: 'طاقم متكامل',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop',
-    whatsappText: 'السلام عليكم، أود الاستفسار عن حجز خدمة تنظيف الفلل'
+    title: 'تنظيف الفلل والقصور بالمنطقة الشرقية',
+    desc: 'طواقم متخصصة لتغطية المساحات الكبيرة، الأدوار المتعددة، الملاحق، والحدائق والواجهات الخارجية.',
+    badge: 'طاقم متكامل ومعدات حديثة',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=75&w=600&auto=format&fit=crop',
+    whatsappText: 'السلام عليكم، أود الاستفسار عن حجز خدمة تنظيف الفلل بالخبر والدمام'
   },
   {
     id: 'steam',
     title: 'غسيل الكنب والمفروشات بالبخار',
-    desc: 'إزالة أصعب البقع والدهون وقتل 99.9% من الجراثيم مع الحفاظ التام على جودة الأقمشة.',
-    badge: 'بخار حار 120°C',
-    image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=800&auto=format&fit=crop',
+    desc: 'إزالة أصعب البقع والزيوت والروائح وتعقيم عميق بأجهزة البخار الحار 120°C مع الحفاظ على الأقمشة.',
+    badge: 'بخار حار إيطالي 120°C',
+    image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=75&w=600&auto=format&fit=crop',
     whatsappText: 'السلام عليكم، أود الاستفسار عن خدمة غسيل الكنب والمفروشات بالبخار'
   },
   {
     id: 'marble',
-    title: 'جلي وتلميع الرخام والبلاط',
-    desc: 'معالجة الخدوش، إزالة البهتان، وتلميع الرخام بأقراص الألماس الإيطالية لإعادة بريقه.',
-    badge: 'كرستال إيطالي',
-    image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=800&auto=format&fit=crop',
+    title: 'جلي وتلميع الرخام والبلاط بالكريستال',
+    desc: 'تسوية الفواصل، إزالة الخدوش والبهتان، وتلميع الرخام بأقراص الألماس المتدرجة وطبقة الكريستال الإيطالية.',
+    badge: 'لمعان زجاجي يدوم طويلاً',
+    image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=75&w=600&auto=format&fit=crop',
     whatsappText: 'السلام عليكم، أود الاستفسار عن خدمة جلي وتلميع الرخام'
   },
   {
     id: 'kitchens',
     title: 'تنظيف وتعقيم المطابخ والحمامات',
-    desc: 'إذابة الدهون المستعصية عن الجدران والشفاطات وتطهير الأحواض والأسطح بمواد مرخصة.',
-    badge: 'إذابة دهون عميقة',
-    image: 'https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?q=80&w=800&auto=format&fit=crop',
+    desc: 'تفتيت وإذابة الدهون المتراكمة عن الجدران والشفاطات والبوتاجازات مع تطهير الأحواض والأسطح بمواد مرخصة.',
+    badge: 'إذابة دهون معقمة 100%',
+    image: 'https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?q=75&w=600&auto=format&fit=crop',
     whatsappText: 'السلام عليكم، أود الاستفسار عن خدمة تنظيف وتعقيم المطابخ'
   },
   {
     id: 'post-construction',
     title: 'تنظيف ما بعد التشطيب والترميم',
-    desc: 'كشط بقايا الدهانات والجبس والأسمنت وتجهيز العقار بالكامل للسكن الفوري المباشر.',
+    desc: 'كشط بقايا البويات والجبس والأسمنت وتلميع النوافذ والأبواب لتجهيز العقار للسكن الفوري المباشر.',
     badge: 'جاهزية سكن فورية',
-    image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=75&w=600&auto=format&fit=crop',
     whatsappText: 'السلام عليكم، أود الاستفسار عن خدمة تنظيف ما بعد التشطيب والترميم'
   }
 ];
@@ -100,24 +100,24 @@ const baScenarios = [
     tabTitle: 'غسيل الكنب بالبخار',
     title: 'إزالة أصعب بقع القهوة والزيوت من أطقم الكنب المخملية',
     description: 'استخدام أجهزة حقن وشفط البخار الحار لإعادة نضارة القماش وألوانه الأصلية دون الإضرار بالأنسجة.',
-    beforeImg: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=1200&auto=format&fit=crop',
-    afterImg: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1200&auto=format&fit=crop'
+    beforeImg: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=75&w=650&auto=format&fit=crop',
+    afterImg: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=75&w=650&auto=format&fit=crop'
   },
   {
     id: 'marble',
     tabTitle: 'جلي وتلميع الرخام',
     title: 'معالجة فواصل الرخام وإزالة البهتان واستعادة لمعة المرآة',
     description: 'جلي بأقراص الألماس المتدرجة مع معالجة بالكريستال لحماية الرخام وإعطائه لمعاناً يدوم طويلاً.',
-    beforeImg: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1200&auto=format&fit=crop',
-    afterImg: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop'
+    beforeImg: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=75&w=650&auto=format&fit=crop',
+    afterImg: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=75&w=650&auto=format&fit=crop'
   },
   {
     id: 'kitchen',
     tabTitle: 'تنظيف دهون المطابخ',
     title: 'تطهير وإزالة الشحوم المتراكمة من الشفاطات والأسطح',
     description: 'تطبيق منظفات آمنة ومذيبة للزيوت المتكلسة على جدران السيراميك والمواقد وخزائن المطبخ.',
-    beforeImg: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=1200&auto=format&fit=crop',
-    afterImg: 'https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?q=80&w=1200&auto=format&fit=crop'
+    beforeImg: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=75&w=650&auto=format&fit=crop',
+    afterImg: 'https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?q=75&w=650&auto=format&fit=crop'
   }
 ];
 
@@ -281,7 +281,7 @@ export default function Home() {
       <header className="header">
         <div className="header-container-fluid">
           <a href="#" className="brand-logo-link" aria-label="الزهور للتنظيف والخدمات المنزلية">
-            <img src="/logo.png" alt="شعار شركة الزهور للتنظيف" className="brand-logo-img" />
+            <img src="/logo.png" alt="شعار شركة الزهور للتنظيف بالدمام والخبر" className="brand-logo-img" width="180" height="56" />
           </a>
 
           {/* Desktop Navigation */}
@@ -383,16 +383,16 @@ export default function Home() {
           <div className="hero-content">
             <div className="hero-badge">
               <span>🇸🇦</span>
-              <span>الشركة الأولى المعتمدة بالمنطقة الشرقية</span>
+              <span>الشركة الأولى المعتمدة للتنظيف بالمنطقة الشرقية</span>
             </div>
 
             <h1 className="hero-title">
-              نظافة احترافية <br />
-              <span className="highlight">لراحة تستحقها</span>
+              شركة تنظيف بالدمام والخبر <br />
+              <span className="highlight">نظافة احترافية لراحة تستحقها</span>
             </h1>
 
             <p className="hero-desc">
-              خدمات تنظيف متكاملة للمنازل والمجالس والسجاد والمفروشات وأكثر، بأيدي طواقم مدربة وأجهزة حديثة تصل إليك أينما كنت في المنطقة الشرقية.
+              خدمات تنظيف متكاملة للمنازل والشقق والفلل بعد التشطيب، غسيل الكنب والمجالس بالبخار، وجلي الرخام بأحدث المعدات الألمانية في الدمام، الخبر، الظهران، سيهات والقطيف.
             </p>
 
             <div className="hero-cta-group">
@@ -449,7 +449,7 @@ export default function Home() {
             {servicesData.map((service) => (
               <div key={service.id} className="service-card-clean">
                 <div className="service-img-wrapper">
-                  <img src={service.image} alt={service.title} loading="lazy" />
+                  <img src={service.image} alt={service.title} loading="lazy" width="600" height="375" />
                   <span className="service-badge">{service.badge}</span>
                 </div>
                 <div className="service-body">
@@ -510,7 +510,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <div className="why-benefit-text">
-                  <h4>فريق محترف وموثوق</h4>
+                  <h3>فريق محترف وموثوق</h3>
                   <p>عمالة نظامية مدربة بإشراف مباشر وأمانة تامة تضمن خصوصية بيتك والحفاظ على مقتنياتك.</p>
                 </div>
               </div>
@@ -526,7 +526,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <div className="why-benefit-text">
-                  <h4>معدات ومنتجات متخصصة</h4>
+                  <h3>معدات ومنتجات متخصصة</h3>
                   <p>أجهزة بخار حار وماكينات جلي رخام إيطالية ومنظفات مرخصة وآمنة 100% على الأطفال وكبار السن.</p>
                 </div>
               </div>
@@ -539,7 +539,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <div className="why-benefit-text">
-                  <h4>مواعيد مرنة والتزام صارم</h4>
+                  <h3>مواعيد مرنة والتزام صارم</h3>
                   <p>نصل إليك في الوقت المحدد بدقة ونوفر خيارات حجز تناسب جدولك وأوقات فراغك بكل سهولة.</p>
                 </div>
               </div>
@@ -552,7 +552,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <div className="why-benefit-text">
-                  <h4>تغطية واسعة وضمان الرضا</h4>
+                  <h3>تغطية واسعة وضمان الرضا</h3>
                   <p>نخدم أهم مدن الشرقية مع التزام صارم بإعادة تقديم الخدمة مجاناً في حال وجود أي ملاحظة دون نقاش.</p>
                 </div>
               </div>
@@ -694,7 +694,7 @@ export default function Home() {
             >
               {/* After Image */}
               <div className="ba-layer ba-layer-after">
-                <img src={currentScenario.afterImg} alt={`بعد: ${currentScenario.title}`} />
+                <img src={currentScenario.afterImg} alt={`بعد: ${currentScenario.title}`} width="650" height="420" loading="lazy" />
               </div>
 
               {/* Before Image Clipped */}
@@ -705,6 +705,9 @@ export default function Home() {
                 <img
                   src={currentScenario.beforeImg}
                   alt={`قبل: ${currentScenario.title}`}
+                  width="650"
+                  height="420"
+                  loading="lazy"
                   style={{ width: sliderContainerRef.current ? `${sliderContainerRef.current.clientWidth}px` : '100%' }}
                 />
               </div>
@@ -768,10 +771,10 @@ export default function Home() {
                 <div className="testi-author-row">
                   <div className="testi-avatar">{testi.name[0]}</div>
                   <div className="testi-author-info">
-                    <h4>
+                    <div className="testi-author-name">
                       <span>{testi.name}</span>
                       <span className="testi-verified-icon" title="عميل موثق">✓</span>
-                    </h4>
+                    </div>
                     <span className="testi-location">{testi.district} - {testi.city} ({testi.date})</span>
                   </div>
                 </div>
@@ -983,7 +986,7 @@ export default function Home() {
           <div className="footer-grid">
             {/* About */}
             <div className="footer-about">
-              <img src="/logo.png" alt="الزهور للتنظيف" style={{ height: '60px', width: 'auto', filter: 'brightness(0) invert(1)' }} />
+              <img src="/logo.png" alt="الزهور للتنظيف" width="180" height="60" style={{ height: '60px', width: 'auto', filter: 'brightness(0) invert(1)' }} />
               <p>
                 شركة الزهور للتنظيف والخدمات المنزلية بالمنطقة الشرقية. خبرة تمتد لأكثر من 5 سنوات في تقديم حلول النظافة المتخصصة للمنازل، الفلل، المفروشات، والرخام بأعلى مقاييس الجودة والأمانة.
               </p>
@@ -991,7 +994,7 @@ export default function Home() {
 
             {/* Quick Links */}
             <div>
-              <h4 className="footer-col-title">روابط سريعة</h4>
+              <h3 className="footer-col-title">روابط سريعة</h3>
               <ul className="footer-links-list">
                 <li><a href="#">الرئيسية</a></li>
                 <li><a href="#services">خدماتنا</a></li>
@@ -1005,7 +1008,7 @@ export default function Home() {
 
             {/* Services */}
             <div>
-              <h4 className="footer-col-title">خدماتنا</h4>
+              <h3 className="footer-col-title">خدماتنا</h3>
               <ul className="footer-links-list">
                 <li><a href="#services">تنظيف الشقق السكنية</a></li>
                 <li><a href="#services">تنظيف الفلل والقصور</a></li>
@@ -1018,7 +1021,7 @@ export default function Home() {
 
             {/* Contact Info */}
             <div>
-              <h4 className="footer-col-title">معلومات التواصل</h4>
+              <h3 className="footer-col-title">معلومات التواصل</h3>
               <ul className="footer-contact-list">
                 <li>
                   <span className="footer-contact-icon">
@@ -1091,7 +1094,7 @@ export default function Home() {
         target="_blank"
         rel="noreferrer"
         className="floating-whatsapp"
-        aria-label="تواصل عبر واتساب"
+        aria-label="تواصل فوري مع المشرف المباشر عبر واتساب"
       >
         <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
           <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.392-10.416c-4.417 0-8 3.582-8 8 0 1.411.368 2.738 1.011 3.896l-1.074 3.924 4.021-1.054c1.115.608 2.387.954 3.742.954 4.418 0 8-3.582 8-8s-3.582-7.72-8-7.72z" />
