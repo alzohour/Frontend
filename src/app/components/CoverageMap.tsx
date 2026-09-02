@@ -181,15 +181,6 @@ export default function CoverageMap({ cities, selectedCityId, onSelectCity, what
   return (
     <div className="leaflet-wide-map-wrapper">
       <div ref={mapContainerRef} className="leaflet-wide-map-canvas" />
-
-      {/* Floating Trust Badge */}
-      <div className="map-stat-floating-card">
-        <div className="map-stat-icon">📍</div>
-        <div className="map-stat-text">
-          <div className="map-stat-count">+15 حي ومنطقة</div>
-          <div className="map-stat-sub">تغطية شاملة ومباشرة في كافة مدن الشرقية</div>
-        </div>
-      </div>
     </div>
   );
 }

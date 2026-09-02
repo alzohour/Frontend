@@ -7,6 +7,8 @@ const cairo = Cairo({
   weight: ["400", "500", "600", "700", "800", "900"],
   display: "swap",
   variable: "--font-cairo",
+  fallback: ["system-ui", "-apple-system", "Segoe UI", "Tahoma", "sans-serif"],
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -279,8 +281,9 @@ export default function RootLayout({
     <html lang="ar" dir="rtl" suppressHydrationWarning>
       <head>
         <meta name="google-site-verification" content="W0TmOCkhU3MfLIi0qVz5_X6WjWx2LMdjESb2a1oy_oU" />
-        <link rel="preconnect" href="https://a.basemaps.cartocdn.com" />
-        <link rel="preconnect" href="https://images.unsplash.com" />
+        <link rel="preload" as="image" href="/hero-bg.webp" fetchPriority="high" type="image/webp" />
+        <link rel="preconnect" href="https://a.basemaps.cartocdn.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="anonymous" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(businessJsonLd) }}
